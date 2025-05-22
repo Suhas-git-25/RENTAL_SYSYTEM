@@ -1,53 +1,81 @@
-# Vehicle Management System
+# 🚗 Vehicle Management System
 
-This is a simple **Java-based Vehicle Management System** that models a rental service for different types of vehicles including cars, trucks, and motorcycles. It uses object-oriented principles such as inheritance, abstraction, and interfaces.
+A **Java-based rental management system** for vehicles like Cars, Trucks, and Motorcycles. This project demonstrates object-oriented programming principles such as inheritance, polymorphism, and interfaces, wrapped into a simple yet functional rental logic system.
 
-## Features
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![OOP](https://img.shields.io/badge/OOP-Principles-blueviolet?style=for-the-badge)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-- Define and manage different types of vehicles.
-- Rent and return vehicles.
-- Calculate rental costs (with different pricing strategies for cars and trucks).
-- Schedule maintenance and check maintenance status.
+---
 
-## Project Structure
+## 📌 Features
 
-- **`Maintained`**: Interface with methods for maintenance scheduling and checks.
-- **`Vehicle`**: Abstract base class implementing `Maintained` and providing core functionality.
-- **`Car`, `Truck`, `Motorcycle`**: Subclasses of `Vehicle` with custom rental cost logic.
-- **`VehicleManagementSystem`**: Main class that demonstrates system functionality with a sample fleet.
+- ✅ Manage a fleet of various vehicle types
+- 🧮 Calculate rental cost with dynamic pricing rules
+- 🔐 Rent and return vehicles with availability checks
+- 🛠️ Maintenance scheduling support via interface
+- 📚 Clean and modular code design for easy extension
 
-## How to Run
+---
 
-### Requirements
-- Java JDK 8 or later
+## 🧱 Project Structure
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/vehicle-management-system.git
-   cd vehicle-management-system
-Compile and run the program:
+```plaintext
+VehicleManagementSystem.java
+│
+├── interface Maintained
+├── class Vehicle (implements Maintained)
+│   ├── class Car
+│   ├── class Truck
+│   └── class Motorcycle
+└── public class VehicleManagementSystem (main)
+🚀 Getting Started
+📦 Requirements
+Java JDK 8 or higher
+
+🛠️ Running the Project
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/vehicle-management-system.git
+cd vehicle-management-system
+Compile the code
 
 bash
 Copy
 Edit
 javac VehicleManagementSystem.java
+Run the program
+
+bash
+Copy
+Edit
 java VehicleManagementSystem
-Example Output
+💻 Example Output
 nginx
 Copy
 Edit
 Rental Cost: $275.0
-(The cost above assumes the first vehicle, a Car, was rented for 5 days with a 10% premium.)
+(This example shows a car rented for 5 days with a 10% premium on the base rate.)
 
-Future Improvements
-Add user input (CLI or GUI).
+🧩 Possible Enhancements
+🌐 Add user input via CLI or GUI
 
-Store and load fleet data from a file or database.
+💾 Store vehicle data in a file or database
 
-Enhance maintenance scheduling with dates.
+📅 Implement detailed maintenance logs with dates
 
-Add unit tests for core functionality.
+🧪 Add unit and integration tests
 
-License
-This project is open-source and available under the MIT License.
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+📫 Contact
+For questions or suggestions, feel free to reach out or open an issue in the repository.
+
+Made with 💻 in Java
